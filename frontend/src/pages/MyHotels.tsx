@@ -6,7 +6,7 @@ import { BiMoney, BiStar } from "react-icons/bi";
 
 
 const MyHotels = () => {
-	const {data: hotelData } = useQuery(
+	const { data: hotelData } = useQuery(
 		"fetchMyHotels",
 		apiClient.fetchMyHotels,
 		{
@@ -26,7 +26,7 @@ const MyHotels = () => {
 					to="/add-hotel" 
 					className="flex bg-blue-600 text-white text-xl font-bold p-2 hover:bg-blue-500"
 				>
-					Add Hotel
+					Add a Hotel
 				</Link>
 			</span>
 			{!hotelData ? (
